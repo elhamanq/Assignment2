@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A11E4AE9"
+    android:stretchColumns="1">
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="50dp"
+            android:width="200dp"
+            android:text="Personal Information"
+            android:textColor="#C6AA54"
+            android:textSize="24sp"
+            android:textStyle="bold"></TextView>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            style="@style/viewText"
+            android:width="100dp"
+            android:text="User Name"></TextView>
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/viewText"
+            android:width="200dp"
+            android:gravity="right"
+            android:inputType="textPersonName"></EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            style="@style/viewText"
+            android:width="120dp"
+            android:text="E-mail"></TextView>
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/viewText"
+            android:width="200dp"
+            android:inputType="textEmailAddress"></EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            style="@style/viewText"
+            android:width="120dp"
+            android:text="hobbies"></TextView>
+
+        <EditText
+            android:id="@+id/hobbies"
+            android:width="200dp"
+            android:inputType="text"></EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            style="@style/viewText"
+            android:width="120dp"
+            android:text="gender"></TextView>
+
+        <RadioGroup
+            android:id="@+id/radioG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow>
+
+        <CheckBox
+            android:id="@+id/remember"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Remember your information"></CheckBox>
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="#C39D2C"
+            android:onClick="saveData"
+            android:text="Save"
+            android:textColor="#FFFFFF"></Button>
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="#C39D2C"
+            android:onClick="btnonclick"
+            android:text="next page"
+            android:textColor="#FFFFFF"></Button>
+    </TableRow>
+
+</TableLayout>
